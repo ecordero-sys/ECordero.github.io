@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elian Cordero | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #0f172a;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 8px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background-color: #eef4ff;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #2563eb;
+        }
+
+        .skill-card h3 {
+            margin-bottom: 10px;
+            color: #1e3a8a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #0f172a;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Elian Cordero</h1>
+    <p>Student • Engineering Enthusiast • Technology Learner</p>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        Hello! My name is Elian Cordero, and I am a sophomore at The Browning School in New York City.
+        I have a strong interest in engineering, technology, and problem-solving. I enjoy learning how
+        things work and developing practical skills that can be applied to real-world challenges.
+    </p>
+
+    <br>
+
+    <p>
+        Outside of school, I enjoy playing the clarinet and saxophone, building and flying FPV drones,
+        and creating LEGO projects. These hobbies allow me to combine creativity, critical thinking,
+        and technical skills.
+    </p>
+
+    <br>
+
+    <p>
+        My long-term goal is to become an engineer. I hope to continue expanding my knowledge of
+        technology, design, and innovation while developing the skills necessary for a successful career.
+    </p>
+</section>
+
+<section id="resume">
+    <h2>Resume</h2>
+
+    <h3>Education</h3>
+    <p>
+        <strong>The Browning School</strong><br>
+        Sophomore (10th Grade)
+    </p>
+
+    <br>
+
+    <h3>Relevant Coursework</h3>
+    <ul>
+        <li>Engineering</li>
+        <li>Computer Science</li>
+    </ul>
+
+    <br>
+
+    <h3>Extracurricular Activities & Programs</h3>
+    <ul>
+        <li>Green Team</li>
+        <li>Riley Way</li>
+        <li>Church Readings</li>
+        <li>Science Alliance Program at the American Museum of Natural History, participating in advanced STEM learning experiences and scientific research opportunities.</li>
+    </ul>
+
+    <br>
+
+    <h3>Academic Interests</h3>
+    <ul>
+        <li>Engineering</li>
+        <li>Technology</li>
+        <li>Computer Science</li>
+        <li>STEM Education</li>
+    </ul>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML Web Development</li>
+                <li>Computer-Aided Design (CAD)</li>
+                <li>FPV Drone Building</li>
+                <li>Basic Website Design</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Academic Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Research</li>
+                <li>Critical Thinking</li>
+                <li>Technical Learning</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Personal Skills</h3>
+            <ul>
+                <li>Teamwork</li>
+                <li>Communication</li>
+                <li>Organization</li>
+                <li>Leadership</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Languages</h3>
+            <ul>
+                <li>English</li>
+                <li>Spanish</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Information</h2>
+
+    <p>
+        Email: <strong>ecordero@browning.edu</strong>
+    </p>
+
+    <br>
+
+    <p>
+        Thank you for visiting my portfolio website.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Elian Cordero | Personal Portfolio</p>
+</footer>
+
+</body>
+</html>
