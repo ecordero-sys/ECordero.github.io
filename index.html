@@ -78,6 +78,11 @@
             padding-bottom: 8px;
         }
 
+        h3 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+
         ul {
             padding-left: 25px;
         }
@@ -90,6 +95,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
+            margin-bottom: 30px;
         }
 
         .skill-card {
@@ -102,6 +108,63 @@
         .skill-card h3 {
             margin-bottom: 10px;
             color: #1e3a8a;
+        }
+
+        /* Project Gallery Grid Layout */
+        .project-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        .project-card {
+            background-color: #ffffff;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+            width: 220px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .portfolio-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover; /* Keeps imagery neat without stretching */
+            border: none;
+            border-radius: 6px;
+        }
+
+        .project-card p {
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+
+        /* Certificate View Button Layout */
+        .cert-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .view-cert-btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .view-cert-btn:hover {
+            background-color: #1e3a8a;
         }
 
         footer {
@@ -121,6 +184,16 @@
             header h1 {
                 font-size: 2rem;
             }
+            
+            .project-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .project-card {
+                width: 100%;
+                max-width: 280px;
+            }
         }
     </style>
 </head>
@@ -131,6 +204,7 @@
         <li><a href="#about">About Me</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
@@ -246,6 +320,34 @@
             </ul>
         </div>
 
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Engineering & Technical Projects</h2>
+    
+    <div class="project-gallery">
+        <div class="project-card">
+            <embed src="drone.pdf" type="application/pdf" class="portfolio-img">
+            <p>Custom Built FPV Drone</p>
+        </div>
+        <div class="project-card">
+            <embed src="saturn-v.pdf" type="application/pdf" class="portfolio-img">
+            <p>LEGO Saturn V Rocket Build</p>
+        </div>
+        <div class="project-card">
+            <img src="space-shuttle.jpeg" alt="LEGO Space Shuttle Discovery" class="portfolio-img">
+            <p>LEGO Space Shuttle Discovery</p>
+        </div>
+        <div class="project-card">
+            <img src="porsche.jpeg" alt="LEGO Technic Porsche 911" class="portfolio-img">
+            <p>LEGO Technic Porsche 911</p>
+        </div>
+    </div>
+
+    <h3>Academic Certifications</h3>
+    <div class="cert-container">
+        <a href="certificate.pdf" target="_blank" class="view-cert-btn">📄 View AMNH Astro Explorations Certificate</a>
     </div>
 </section>
 
